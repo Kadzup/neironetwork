@@ -1,3 +1,4 @@
+#%%
 import numpy as np
 
 
@@ -36,6 +37,8 @@ def prediction(array_vector, nw):
     value = nw.value_output.argmax()
     original_vector = array_vector[value]
     change_number = len(original_vector[original_vector != input_vector])
-    print("Вектор на вході: ", input_vector)
-    print("Вектор: ", original_vector)
-    print("Вектор: " + str(value + 1) + ". Було конвертовано у " + str(change_number))
+    print(f"Вектор на вході: {input_vector}")
+    print(f"Вектор: {original_vector}")
+    print(f"Вектор: {str(value + 1)}. Було змінено {str(change_number)} значення")
+
+# %%
